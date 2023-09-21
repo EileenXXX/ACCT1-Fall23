@@ -1,10 +1,14 @@
 img{
-    width: 255px;
+    max-width: 100%;
 }
 
+/* #specialimage {
+    width: 215px;
+} */
+
 main, header{
-    width: 768px;
-    background-color: greenyellow;
+    /* width: 768px; */
+    background-color: rgb(246, 255, 0);
     margin-left: auto;
     margin-right: auto;
 }
@@ -12,9 +16,61 @@ main, header{
 nav ul{
     list-style: none;
     padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
 
 }
 
 nav ul li{
-    display: inline-block;
+    /* display: inline-block; */
+    padding: 10px;
+    border-bottom: 1px solid black;
 }
+
+.em-text{
+    font-style: italic;
+}
+
+.red-text{
+    color: initial
+}
+
+.green-text{
+    color: initial
+}
+
+main a {
+    color: blanchedalmond;
+    text-decoration: none;
+    background-color: grey;
+}
+
+@media (min-width: 800px){
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav ul li {
+        border: none;
+        padding: 0;
+    }
+
+    .red-text{
+        color: rgb(239, 15, 15)
+    }
+    
+    .green-text{
+        color: rgb(0, 250, 54);
+    }
+    }
+
+@media (min-width: 1000px){
+    .red-text,
+    .green-text{
+        color: rgb(10, 10, 255);
+    }
+}
+
+
