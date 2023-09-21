@@ -4,6 +4,7 @@ img{
 
 main{
     width: 768px;
+    background-color: greenyellow;
     margin-left: auto;
     margin-right: auto;
 }
