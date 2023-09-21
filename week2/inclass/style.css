@@ -2,9 +2,19 @@ img{
     width: 255px;
 }
 
-main{
+main, header{
     width: 768px;
     background-color: greenyellow;
     margin-left: auto;
     margin-right: auto;
+}
+
+nav ul{
+    list-style: none;
+    padding-left: 0;
+
+}
+
+nav ul li{
+    display: inline-block;
 }
