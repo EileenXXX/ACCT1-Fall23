@@ -1,0 +1,168 @@
+img{
+    max-width: 50%;
+}
+
+#specialimage {
+    width: 887px;
+}
+
+.class{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+main,header{
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+
+main h1,h2,h3,h4{
+    text-align:inherit;
+    margin-top: 100px;
+}
+
+main h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 10px;
+    margin-left: 100px;
+}
+
+main h2,h3,h4{
+    size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+main p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    line-height: 10px;
+}
+
+nav ul{
+    list-style:armenian;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:first baseline;
+    text-align: center;
+
+}
+
+nav ul li{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.em-text{
+    font-style:italic
+}
+
+.red-text{
+    color: brown
+}
+
+
+.green-text{
+    color: burlywood
+}
+
+@media (min-width: 300px){
+    nav ul {
+        flex-direction: column-reverse;
+        color: rebeccapurple;
+        justify-content:space-between;
+
+    }
+    nav ul li {
+        border: none;
+        padding: 20%;
+    }
+
+    .em-text{
+        text-decoration:wavy;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:smaller;
+    }
+
+    .red-text{
+        color: rgb(15, 239, 101)
+    }
+    
+    .red-text{
+        background-color: brown;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: larger;
+    }
+    .green-text{
+        color: rgb(50, 32, 152);
+        background-color: rgb(242, 255, 4);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: larger;
+        text-decoration: line-through;
+    }
+
+    main h1{
+        color: rgb(116, 42, 165);
+        background-color: black;
+    }
+
+    main h2{
+        color:rgb(255, 145, 0);
+    }
+
+    main h3{
+        color: rgb(0, 250, 137);
+    }
+
+    main h4{
+        color: rgb(255, 151, 151);
+    }
+    }
+
+
+@media (min-width: 800px){
+    .red-text,
+    .green-text{
+        color: rgb(161, 161, 255);
+        text-decoration: line-through;
+    }
+
+    .em-text{
+        text-decoration:dotted;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 50px;
+        line-height: 100px;
+        margin-top: 30px;
+    }
+
+    main h1{
+        background-color:initial;
+    }
+
+    main h2{
+        background-color:initial;
+    }
+
+    main h3{
+        background-color:initial;
+    }
+
+    main h4{
+        background-color:initial;
+    }
+
+    nav ul {
+        flex-direction: row;
+        color: black;
+            justify-content:space-evenly}
+            
+
+    }
