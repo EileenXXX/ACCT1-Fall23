@@ -2,15 +2,17 @@ img{
     max-width: 100%;
 }
 
-/* #specialimage {
+#specialimage {
     width: 215px;
-} */
+}
 
-main, header{
+main{
     /* width: 768px; */
-    background-color: rgb(246, 255, 0);
-    margin-left: auto;
-    margin-right: auto;
+    background-color: rgb(2, 255, 48);
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-top: 25px;
+    margin-bottom: 75px;
 }
 
 nav ul{

@@ -1,0 +1,147 @@
+img{
+    max-width: 100%;
+}
+
+#specialimage {
+    width: 887px;
+}
+
+main,header{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+
+main h1,h2,h3,h4{
+    text-align: center;
+    margin-top: 50px;
+}
+
+main h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main h2,h3,h4{
+    font: size 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+nav ul{
+    list-style: none;
+    padding-left: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items:normal;
+    text-align: center;
+
+}
+
+nav ul li{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.em-text{
+    font-style:normal 
+}
+
+.red-text{
+    color: initial
+}
+
+
+.green-text{
+    color: initial
+}
+
+main a {
+    color: blanchedalmond;
+    text-decoration: none;
+    background-color: grey;
+}
+
+@media (min-width: 600px){
+    nav ul {
+        flex-direction: row;
+        justify-content:center;
+        color: black;
+
+    }
+    nav ul li {
+        border: none;
+        padding: 0;
+    }
+
+    .em-text{
+        text-decoration: underline;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: larger;
+    }
+
+    .red-text{
+        color: rgb(239, 15, 15)
+    }
+    
+    .green-text{
+        color: rgb(0, 250, 54);
+    }
+
+    main h1{
+        background-color: aquamarine;
+    }
+
+    main h2{
+        background-color: yellow;
+    }
+
+    main h3{
+        background-color: rgb(255, 177, 203);
+    }
+
+    main h4{
+        background-color: palegreen;
+    }
+    }
+
+
+@media (min-width: 1000px){
+    .red-text,
+    .green-text{
+        color: rgb(10, 10, 255);
+    }
+
+    .em-text{
+        text-decoration:dotted;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 80px;
+        line-height: 100px;
+        margin-top: 30px;
+    }
+
+    main h1{
+        background-color:initial;
+    }
+
+    main h2{
+        background-color:initial;
+    }
+
+    main h3{
+        background-color:initial;
+    }
+
+    main h4{
+        background-color:initial;
+    }
+}
+
+
