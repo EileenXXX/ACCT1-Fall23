@@ -72,8 +72,8 @@ main a {
 @media (min-width: 600px){
     nav ul {
         flex-direction: row;
-        justify-content:center;
         color: black;
+        justify-content: space-between;
 
     }
     nav ul li {
@@ -142,6 +142,11 @@ main a {
     main h4{
         background-color:initial;
     }
-}
 
+    nav ul {
+        flex-direction: row;
+        color: black;
+            justify-content:space-around}
+            
 
+    }
