@@ -127,6 +127,7 @@ nav ul li{
     main h4{
         color: rgb(255, 151, 151);
     }
+
     }
 
 
@@ -167,5 +168,7 @@ nav ul li{
         color: black;
             justify-content:space-evenly}
             
-
+    img {
+        border: 10px black
+    }
     }
