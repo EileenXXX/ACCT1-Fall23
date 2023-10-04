@@ -9,22 +9,34 @@ body {
 }
 
 #BTNImage{
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
 }
 
 #btn1{
-    border: 1;
+    border: 2;
     background-size: auto;
     background-image: url(picture1.webp);
-    border: 4px solid rgb(7, 7, 7);
-    background-color: rgb(247, 3, 3);
+    border: 2px solid rgb(183, 241, 9);
 }
 
 #btn2{
-    border: 1;
+    border: 2;
     background-size: auto;
     background-image: url(picture2.webp);
-    border: 4px solid rgb(7, 7, 7);
-    background-color: rgb(247, 3, 3);
+    border: 2px solid rgb(13, 9, 241);
+}
+
+#btn3{
+    border: 2;
+    background-size: auto;
+    background-image: url(picture3.webp);
+    border: 2px solid rgb(241, 210, 9);
+}
+
+#btn4{
+    border: 2;
+    background-size: auto;
+    background-image: url(picture4.webp);
+    border: 2px solid rgb(255, 75, 159);
 }
