@@ -2,7 +2,7 @@ let angle = 0.67
 
 function setup() {
     let myCanvas = createCanvas(800, 800);
-    myCanvas.parent("sketchHolder")
+    myCanvas.parent("sketchHolder1")
     
     setInterval(function(){
         console.log("fire")
