@@ -5,30 +5,23 @@
     <title>Multi Channel Controller</title>
 </head>
 <body>
-    <h1>Blinkenlights</h1>
+    <h1>Multi-Channel Controller</h1>
     <h2>Project Description</h2>
-    <p>This project written in Arduino language controls the blinking of an LED attached to pin 21, to make the LED blink randomly like Morse code.</p>
+    <p>I will create a multi-channel controller that would allow me to change various parameters in a Processing program by applying the values received from ESP32 via serial communication.
 
+    I want my potentiometer to be used to change the color of the circle, and for the buttons to control whether or not the circle moves across the screen. This way, each time the button is pressed, the circle will appear at a random location on the screen and its color will change based on the value of the potentiometer.</p>
     
     <h2>Code Documentation</h2>
-    <p>The following code is written for an Arduino board. It contains two functions: setup() and loop(). 
+    <p>First, I need to program the ESP32 to send multiple values over serial communication. Let's assume you have sensors or inputs that are generating these values.</p>
+    <img src="serial.png" alt="serial">
 
-        The setup() function is executed only once when the program starts. Its purpose is to initialize settings or pin modes. In this case, it sets pin 21 as an output pin using pinMode(21, OUTPUT).
-        
-        The loop() function is executed continuously after the setup() function finishes. It's the core of most Arduino programs and is used to actively control the board. 
-        
-        Inside the loop() function, the following steps occur: 
-        
-        1. The LED turns on by setting pin 21 to HIGH using digitalWrite(21, HIGH). 
-        2. The program then pauses for a random duration between 100 and 1000 milliseconds (1 second), achieved with delay(random(100, 1000)). This creates a blinking effect with varying on-time durations. 
-        3. Next, the LED turns off by setting pin 21 to LOW with digitalWrite(21, LOW). 
-        4. Finally, the program pauses again for a random duration between 100 and 1000 milliseconds, creating a blinking effect with varying off-time durations.</p>
-    <img src="arduino blink.png" alt="blink">
+    <p>Second, I need to write a processing code that meets my need. This code maps the value of the potentiometer to a color and moves the position of the circle when the button is pressed. The color of the circle changes as the potentiometer is turned, creating a dynamic visual effect. The circle jumps to a new position on the screen when the button is pressed.</p>
+    <img src="mcc.png" alt="processing">
 
     <h2>Video Demonstration</h2>
-    <p>I recorded a video for the LED.</p>
+    <p>I recorded a video for my controller.</p>
     <video width="900" height="1600" controls>
-        <source src="Random Morse Code.mp4" type="video/mp4">
+        <source src="Video-MultiChannelController.mp4" type="video/mp4">
     </video>
 </body>
 </html>
