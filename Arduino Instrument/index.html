@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<link href="style.css" rel="stylesheet">
+<head>
+    <title>Arduino Instrument</title>
+</head>
+<body>
+    <h1>Arduino Finger Drum Instrument</h1>
+    <h2>Project Overview</h2>
+    <p>This project involves creating a simple electronic finger drum using Arduino and Processing. Users simulate drum sounds by pressing different buttons connected to an Arduino board. The Arduino code is responsible for detecting button presses and sending signals, while the Processing code receives these signals and plays the corresponding drum sound effects.</p>
+    
+    <h2>Hardware Requirements</h2>
+    <p> Bread board, 4 buttons, Jumper wires</p>
+    
+    <h2>Project Build Process</h2>
+    <p> Step 1: Hardware Setup
+        -Connect one pin of each of the 4 buttons to the Arduino's ground (GND).
+        -Connect the other pin of each button to Arduino's digital pins 23, 22, 14, 32, respectively.
+
+        Step 2: Writing the Arduino Code
+        -Define the button pins and their count.
+        -Initialize the serial port and button pins in the setup() function.
+        -Check the status of each button in the loop() function; if a button is pressed, send the button number through the serial port.
+        <img src="arduino drum.png" alt="serial">
+
+        Step 3: Writing the Processing Code
+        -Initialize serial communication.
+        -Load the drum sound audio files.
+        -Detect serial data in the draw() function; if a button number is received, play the corresponding drum sound.
+        <img src="processing drum.png" alt="serial">
+
+        Step 4: Testing
+        -Connect the Arduino board to the computer and upload the Arduino code.
+        -Open Processing and run the Processing code.
+        -Press the buttons and check if the drum sounds are played correctly.
+        </p>
+    <h2>Images & Video Demonstration</h2>
+    <p>I took some photos and recorded a video for my finger drum.</p>
+    <img src="fingerdrum1.jpg" alt="serial">
+    <img src="finger drum2.jpg" alt="serial">
+    <video width="900" height="1600" controls>
+        <source src="Video.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
