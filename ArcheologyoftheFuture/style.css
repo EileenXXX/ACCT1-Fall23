@@ -21,11 +21,6 @@ p, pre {
 }
 
 
-video, iframe {
-    display: block;
-    margin: 40px auto; /* Increased margin for video and iframe */
-}
-
 img {
     width: 70%;
     height: auto;
